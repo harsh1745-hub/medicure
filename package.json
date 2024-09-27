@@ -10,12 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "chart.js": "^4.4.4",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.26.0",
     "react-spinners": "^0.14.1",
     "react-toastify": "^10.0.5",
+    "socket.io": "^4.8.0",
+    "socket.io-client": "^4.8.0",
     "swipe": "^1.7.7",
     "swiper": "^11.1.9"
   },

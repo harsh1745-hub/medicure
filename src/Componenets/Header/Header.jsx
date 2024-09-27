@@ -14,18 +14,19 @@ import {BiMenu} from "react-icons/bi";
       display:"Find a doctors",
     },
     {
-      path:"/services",
+      path:"/service",
       display:"Services",
     },
     {
       path:"/contact",
       display:"Contact",
     },
+    {
+      path:'/dashboard',
+      display:"Dashboard"
+    }
    
-   {
-     path:'/',
-     display:"About us"
-   }
+  
    
    
 
@@ -53,7 +54,7 @@ function Header() {
 
 
   return (
-  <header className='header flex items-center gap-7 px-5 mt-2' ref={headerRef}>
+  <header className='header flex items-center gap-7 px-5 mt-2 mx-auto' ref={headerRef}>
     
     <div className='flex items-center justify-between'>
          {/*============logo======== */}
@@ -62,7 +63,7 @@ function Header() {
 
     {/* ======Menu */}
       <div className='navigation 'ref={menuRef} onClick={toggleMenu}>
-        <ul className='menu flex items-center gap-[2.7rem]'>
+        <ul className='menu flex items-center gap-[2.7rem] ml-24'>
           {
             navLinks.map((Link,index)=><li key={index}> 
               <NavLink to={Link.path} className={navClass=> navClass.isActive?'text-primaryColor text-[16px] leading-7 font-[600]':'text-textColor text-[16px] leading-7 font-[600] hover:text-primaryColor cursor-pointer gap-4'}>
@@ -84,7 +85,8 @@ function Header() {
           </Link>
         </div>
           <Link to="/login">
-           <button className='bg-primaryColor py-2 px-6  text-white font-[600]  flex items-center justify-center rounded-[60px]'>Log in</button>
+           <button className="w-full flex justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >Log in</button>
           
           </Link>
           <span className='md:hidden' onClick={toggleMenu}>

@@ -6,6 +6,7 @@ import Footer from '../Componenets/Footer/Footer'
  const Layout=()=>{
     return<>
      <Header/>
+     
      <main>
         <Router/>
      </main>

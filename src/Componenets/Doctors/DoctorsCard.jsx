@@ -25,7 +25,7 @@ const DoctorsCard = ({doctor}) => {
                 <h3 className='leading-7 lg:text-[18px] lg:leading-[30px] font-semibold'>+{totalPatients} patients</h3>
                 <p className='text-[14px] leading-6 font-[400] text-textColor '>At {hospital}</p>
             </div>
-            <Link to='/doctor' className='w-[44px] h-[44px] rounded-full border border-solid border-black mt-[30px] mx-auto items-centre justify-center group hover:bg-primaryColor hover:border-none'>
+            <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-black mt-[30px] mx-auto items-centre justify-center group hover:bg-primaryColor hover:border-none'>
                    <BsArrowRight className='group hover:text-white w-8 h-10'/>
                     </Link>
                   

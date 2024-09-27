@@ -8,11 +8,11 @@ const Contact = () => {
         <p className='mb-8 lg:mb-16 font-light text-center text_para'>Got a Technical Issue? Want to Send feedback about a beta feautre? Let us Know. </p>
           <form action='#' className='space-y-8'>
             <div>
-             <label htmlFor='enail' className='form_label'>
+             <label htmlFor='email' className='form_label'>
               your Email
 
              </label>
-              <input
+              <input 
                  type='email'
                  id='email'
                  placeholder='example@gmail.com'
@@ -35,7 +35,7 @@ const Contact = () => {
             
             
                                        </div>
-                                     <div className='sm:col-span-2'>
+                                     <div className='sm:col-span-2 '>
                 
                                         <label htmlFor='message' className='form_label'>
                                                   Your message
