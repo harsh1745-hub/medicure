@@ -3,21 +3,15 @@ import heroImg01 from '../assests/image/hero-img01.png'
 import icon01 from  "../assests/image/icon01.png"
 import { Link } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs' 
-import About from './About';
-
-import feautreImg from './../assests/image/feature-img.png'
-import videoImg from './../assests/image/video-icon.png'
-import avatarImg from './../assests/image/avatar-icon.png';
+import About from './About'
 import DoctorsList from '../Componenets/Doctors/DoctorsList'
 import faqImg from './../assests/image/faq-img.png'
-import FaqList from '../Componenets/Faqs/FaqList'
 import Testimonal from '../Componenets/Testimonal/Testimonal'
-
 import FeaturesSection from '../Componenets/Feautre/Feautre'
 import MedicalServicesSection from '../Componenets/Medicalservices/MedicalServices'
 import Schedule from '../Componenets/Appointment/Schedule'
 import Faq from '../Componenets/FaqData/Faq'
-import Linechart from '../Componenets/Linechart/Linechart'
+
 
 
        

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import starIcon from '../../assests/image/Star.png'
+import starIcon from './../../assests/image/Star.png'
 import { BsArrowRight } from "react-icons/bs";
 
 const DoctorsCard = ({doctor}) => {
