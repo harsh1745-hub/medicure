@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import doctorImg from './../../assests/image/doctor-img02.png'
-import starIcon from './../../assests/image/star.png'
+import starIcon from './../../assests/image/Star.png'
 import DoctorAbout from './DoctorAbout'
 import Feedback from './Feedback'
 
