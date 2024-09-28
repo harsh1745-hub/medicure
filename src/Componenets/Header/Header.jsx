@@ -66,7 +66,8 @@ function Header() {
         <ul className='menu flex items-center gap-[2.7rem] ml-24'>
           {
             navLinks.map((Link,index)=><li key={index}> 
-              <NavLink to={Link.path} className={navClass=> navClass.isActive?'text-primaryColor text-[16px] leading-7 font-[600]':'text-textColor text-[16px] leading-7 font-[600] hover:text-primaryColor cursor-pointer gap-4'}>
+              <NavLink to={Link.path} className={navClass=> navClass.isActive?'relative text-primaryColor text-[16px] leading-7 font-[600]':'text-black text-[16px] leading-7 font-[600] hover:text-primaryColor cursor-pointer gap-4 transition-all duration-200'}>
+              <div className='absolute bottom-0 w-full h-1 bg-primaryColor hidden group-hover:block transition-all duration-200 '></div>
 
              {Link.display} </NavLink>
             </li>)

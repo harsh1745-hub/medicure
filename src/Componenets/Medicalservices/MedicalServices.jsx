@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Make sure you have react-router-dom installed
+import { Link } from 'react-router-dom'; 
+// Make sure you have react-router-dom installed
 
 const MedicalServicesSection = () => {
   const services = [
@@ -25,7 +26,7 @@ const MedicalServicesSection = () => {
       title: "Nutrition Counseling",
       description: "Personalized nutrition plans and dietary advice from certified nutritionists.",
       icon: "🥗",
-      link: "/services/nutrition-counseling" // Replace with actual route
+      link: "/plan" // Replace with actual route
     },
     {
       title: "Chronic Disease Management",

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import signupImg from './../assests/image/signup.gif'
 import avatarImg from './../assests/image/avatar-icon.png'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 const Signup = () => {
     const[selectedFile,setSelectedFile]=useState(null)
     const[previewURL, setPreviewURL]=useState();
@@ -22,6 +23,13 @@ const Signup = () => {
           }
              const submitHandler=async event=>{
                   event.preventDefault()
+                    try {
+                      const response = await axios.post('/api/auth/login', { username, password });
+                      console.log('Login successful:', response.data);
+
+                    } catch (error) {
+                      console.error('Login error:', error);
+                    }
              }
 
   return (

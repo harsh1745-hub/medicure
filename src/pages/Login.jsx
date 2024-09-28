@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
@@ -9,6 +10,15 @@ const Login = () => {
        const handleInputChange=e=>{
             setFormData({...formData,[e.target.name]: e.target.value});
        }
+           const handleSubmit=async(e)=>{
+                e.preventDefault();
+                 try {
+                      const response=await axios.post( '/api/auth/login',  {username,password});
+                       console.log('login succesful',response.data);
+                 } catch (error) {
+                        console.log('login error ')
+                 }
+           }
   return (
     <section className='px-5 lg:px-0'>
       <div className='w-full max-w-[570px] mx-auto rounded-lg shadow-md md:p-10 gap-3'>
@@ -17,6 +27,7 @@ const Login = () => {
         </h3>
            <form className='py-4 md:py-0'>
             <div className='mb-5'>
+             
               <input type='email' placeholder='Enter your Email ' name='email' value={formData.email} onChange={handleInputChange}
                  className='w-full px-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor rounded-md cursor-pointer'
                   required

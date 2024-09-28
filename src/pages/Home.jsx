@@ -1,9 +1,5 @@
 import React from 'react'
 import heroImg01 from '../assests/image/hero-img01.png'
-import icon01 from  "../assests/image/icon01.png"
-import { Link } from 'react-router-dom'
-import { BsArrowRight } from 'react-icons/bs' 
-import About from './About'
 import DoctorsList from '../Componenets/Doctors/DoctorsList'
 import faqImg from './../assests/image/faq-img.png'
 import Testimonal from '../Componenets/Testimonal/Testimonal'

@@ -1,16 +1,9 @@
 import React from "react"
 import Home from "../pages/Home"
 import Login from "../pages/Login"
-
 import Contact from "../pages/Contact"
-
-
-
-
-
 import {Routes,Route} from 'react-router-dom'
- 
-import Signup from '../pages/Signup'
+ import Signup from '../pages/Signup'
 import Doctor from "../pages/Doctor/Doctor"
 import Doctordetails from "../pages/Doctor/Doctordetails"
 import MedicalServicesSection from "../Componenets/Medicalservices/MedicalServices"
@@ -22,6 +15,8 @@ import Wearable from "../Componenets/Wearable/Wearable"
 import Dashboard from "../Componenets/Dashboard/Dashboard"
 import Linechart from "../Componenets/Linechart/Linechart"
 import Mental from "../Componenets/Mentalhealth/Mental"
+import Plan from "../Componenets/nutrition plan/plan"
+import Nut from "../Componenets/Nutrition/Nut"
 
 
 
@@ -47,6 +42,8 @@ function Router() {
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/chronic' element={<Linechart/>}/>
       <Route path="/mental" element={<Mental/>}/>
+      <Route path="/plan" element={<Plan/>}/>
+      <Route path="/plans" element={<Nut/>}/>
       
 
 
