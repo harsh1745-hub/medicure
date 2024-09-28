@@ -15,8 +15,7 @@ import Wearable from "../Componenets/Wearable/Wearable"
 import Dashboard from "../Componenets/Dashboard/Dashboard"
 import Linechart from "../Componenets/Linechart/Linechart"
 import Mental from "../Componenets/Mentalhealth/Mental"
-import Plan from "../Componenets/nutrition plan/plan"
-import Nut from "../Componenets/Nutrition/Nut"
+
 
 
 
@@ -42,8 +41,6 @@ function Router() {
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/chronic' element={<Linechart/>}/>
       <Route path="/mental" element={<Mental/>}/>
-      <Route path="/plan" element={<Plan/>}/>
-      <Route path="/plans" element={<Nut/>}/>
       
 
 
